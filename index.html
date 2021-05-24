@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeforces Charts</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <h1 class="title">Codeforces</h1>
+            <span class="subtitle">Language usage frequency | Rating trends</span>
+            <form action="" id="form">
+                <input type="text" id="handle-input" placeholder="Codeforces Handle" class="input-text"
+                    list="default-handles" autocomplete="off" autofocus /><button class="button"
+                    id="submit-button">Submit</button>
+                <datalist id="default-handles">
+                    <option value="Petr">
+                    <option value="Benq">
+                    <option value="DmitriyH">
+                    <option value="Fefer_Ivan">
+                </datalist>
+            </form>
+        </div>
+
+        <div class="language-stats section display-none">
+            <div class="language-stats-canvas-container"></div>
+        </div>
+
+        <div class="rating-stats section display-none">
+            <div class="rating-stats-canvas-container"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
