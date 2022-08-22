@@ -74,7 +74,7 @@ function getLanguageData(event) {
             alert("Error");
         });
 
-    fetch(`http://codeforces.com/api/user.rating?handle=${handleInput.value}`)
+    fetch(`https://codeforces.com/api/user.rating?handle=${handleInput.value}`)
         .then((response) => response.json())
         .then(function (jsonData) {
             const rating = {};
